@@ -1,0 +1,52 @@
+Components are the building blocks of any React app and 
+a typical React app will have many of these. Simply put, 
+a component is a JavaScript class or function that optionally
+accepts inputs i.e. properties(props) and returns a React element
+that describes how a section of the UI (User Interface) should appear.
+
+https://medium.com/the-andela-way/understanding-react-components-37f841c1f3bb
+
+
+https://www.geeksforgeeks.org/reactjs-importing-exporting/
+
+https://alligator.io/react/class-components/
+
+https://reactjs.org/docs/components-and-props.html
+
+https://codeburst.io/react-js-understanding-functional-class-components-e65d723e909
+
+
+RCC- classical look lol 
+RFC- functional component
+
+Class component- // State you need to use class based components 
+    // or use life cycle hooks-for events with data-forms for example
+whenever you are extending a class-it has functions you need to bring 
+in ---you must use the super key word it tells the constructor to bring
+it in and gives it access to it(go to parent class component class--bring
+it all in)
+
+What is super () in JavaScript?
+The super keyword is used to access and call functions on an object's 
+parent. The super.prop and super[expr] expressions are valid in any 
+method definition in both classes and object literals.
+
+https://www.w3schools.com/react/react_props.asp
+https://www.w3schools.com/react/react_components.asp
+https://www.w3schools.com/react/react_jsx.asp
+https://www.w3schools.com/react/react_state.asp
+https://www.w3schools.com/react/react_lifecycle.asp
+
+
+BIND
+
+https://css-tricks.com/understanding-react-setstate/
+https://medium.com/shoutem/react-to-bind-or-not-to-bind-7bf58327e22a
+https://medium.com/webmonkeys/properly-using-bind-in-react-2e5c7e62bdb8
+
+https://bottega.devcamp.com/full-stack-development-javascript-python/guide/2354
+
+
+https://bottega.devcamp.com/full-stack-development-javascript-python/guide/2357
+
+
