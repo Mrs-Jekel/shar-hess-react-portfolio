@@ -61,12 +61,6 @@ export default class App extends Component {
         const loggedIn = response.data.logged_in;
         const loggedInStatus = this.state.loggedInStatus;
 
-      //below conditionals
-      //if loggedIn and status is logged in (then you don't need to do anything) => just return data
-      //if logged in(response true) status is not logged in => we need to update state
-      //if not logged in(call api not logged in) and status is logged in then => make sure we log out(update state to logged out)
-
-
         if (loggedIn && loggedInStatus === "LOGGED_IN") {
           return loggedIn;
         } else if (loggedIn && loggedInStatus === "NOT_LOGGED_IN") {

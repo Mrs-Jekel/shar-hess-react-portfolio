@@ -10,7 +10,7 @@ export default class BlogModal extends Component {
   constructor(props) {
       super(props)
 
-      this.customStyles = {
+      this.custom = {
           content: {
               top: "50%",
               left: "50%",
@@ -22,7 +22,7 @@ export default class BlogModal extends Component {
           overlay: {
               backgroundColor: "rgba(1, 1, 1, 0.65)"
           }
-      }
+      };
       
       this.handleSuccessfulFormSubmission = this.handleSuccessfulFormSubmission.bind(this);
   }
@@ -35,10 +35,12 @@ export default class BlogModal extends Component {
   render() {
       return (
           <ReactModal 
-            style={this.customStyles}
-            onRequestClose={() => {
-              this.props.handleModalClose();
-          }}isOpen={this.props.modalIsOpen}>
+                style={this.custom}
+                onRequestClose={() => {
+                this.props.handleModalClose();
+            }}
+            isOpen={this.props.modalIsOpen}>
+
             <BlogForm 
               handleSuccessfulFormSubmission={this.handleSuccessfulFormSubmission} />
               
