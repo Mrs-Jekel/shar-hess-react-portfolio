@@ -153,31 +153,31 @@ export default class PortfolioForm extends Component {
     
     handleSubmit(event) {
         axios({
-        method: this.state.apiAction,
-        url: this.state.apiUrl,
-        data: this.buildForm(),
-        withCredentials: true
-        })
+          method: this.state.apiAction,
+          url: this.state.apiUrl,
+          data: this.buildForm(),
+          withCredentials: true
+          })
         .then(response => {
             if (this.state.editMode) {
-            this.props.handleEditFormSubmission();
+              this.props.handleEditFormSubmission();
             } else {
-            this.props.handleNewFormSubmission(response.data.portfolio_item);
+              this.props.handleNewFormSubmission(response.data.portfolio_item);
             }
 
             this.setState({
-            name: "",
-            description: "",
-            category: "Body Building Prep",
-            position: "",
-            url: "",
-            thumb_image: "",
-            banner_image: "",
-            logo: "",
-            editMode: false,
-            apiUrl: "https://sharhess.devcamp.space/portfolio/portfolio_items/",
-            apiAction: "post"
-        });
+              name: "",
+              description: "",
+              category: "Body Building Prep",
+              position: "",
+              url: "",
+              thumb_image: "",
+              banner_image: "",
+              logo: "",
+              editMode: false,
+              apiUrl: "https://sharhess.devcamp.space/portfolio/portfolio_items/",
+              apiAction: "post"
+            });
         
         [this.thumbRef, this.bannerRef, this.logoRef].forEach(ref => {
             ref.current.dropzone.removeAllFiles();
