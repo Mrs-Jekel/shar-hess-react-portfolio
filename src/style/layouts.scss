@@ -1,0 +1,52 @@
+.content-page-wrapper {
+    width: 100vw;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    height: calc(100vh - 84px);
+    background-color:#fffcbe;
+
+
+  .right-column {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      padding: 100px;
+
+      .contact-page-detail {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-gap: 15px;
+    
+        .contact-information {
+            display: flex;
+            align-items: center;
+      
+
+            .icon {
+                display: flex;
+                justify-content: center;
+                font-size: 2em;
+                color: rgb(51, 243, 179);
+
+                &:hover {
+                  color: rgb(50, 194, 146);
+                }
+              }
+
+            .text {
+                font-size: 30px;
+                margin-left: 20px;
+                color: rgb(51, 243, 179);
+                font-weight: 900;
+                
+                &:hover {
+                  color: rgb(50, 194, 146);
+                }
+                
+                
+              }   
+            }
+          }
+        }
+    }
